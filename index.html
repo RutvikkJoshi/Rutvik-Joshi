@@ -228,13 +228,18 @@
     </section>
 
     <section class="form-section" id="booking">
-      <h2>Book Me</h2>
-      <form onsubmit="return sendWhatsApp();">
-        <input type="text" id="name" name="name" placeholder="Your Name" required>
-        <input type="email" id="email" name="email" placeholder="Your Email Address" required>
-        <button type="submit">Submit</button>
-      </form>
-    </section>
+  <h2>Booking or Collaboration</h2>
+  <form action="https://formsubmit.co/YOUR_EMAIL@example.com" method="POST">
+    <input type="text" id="name" name="name" placeholder="Your Name" required>
+    <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+    
+    <input type="hidden" name="_subject" value="New Booking from Portfolio Site">
+    <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html">
+    <input type="hidden" name="_captcha" value="false">
+
+    <button type="submit">Submit</button>
+  </form>
+</section>
   </div>
 
   <footer>
